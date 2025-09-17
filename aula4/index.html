@@ -8,6 +8,12 @@
 <body>
     <header>
         <h1>Listas,Tabelas e Formularios</h1>
+        <style>
+            table, th, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
     </header>
     <main>
         <section>
@@ -26,21 +32,22 @@
         <hr>
         <section>
             <h2>Tabela</h2>
-            <table border="1">
+            <table border="1" heigth="100" width="300"
+            cellpadding="15" cellspacing="50">
                 <tr>
-                    <th>Nomee Idade</th>
+                    <th colspan="2">Nome e Idade</th>
                     <!-- <th>Idade</th> -->
                 </tr>
-                <tr>
-                    <td>Grazi</td>
+                <tr valing="top">
+                    <td rowspan="2">Grazi</td>
                     <td>20</td>
                 </tr>
                 <tr>
-                    <td>Priscila</td>
+                    <!-- <td>Priscila</td> -->
                     <td>20</td>
                 </tr>
                 <tr>
-                    <td>Isabelly</td>
+                    <td align="right">Isabelly</td>
                     <td>20</td>
                 </tr>
             </table>
